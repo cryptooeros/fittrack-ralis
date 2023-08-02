@@ -28,29 +28,44 @@ With our group members brilliant thinking and innovative minds we thought about 
 ## ERD DIAGRAM
 ![ERD](client/src/images/FitTrack.png)
 
-A user has many :targets
+#### A user 
 
-Target:
+-has many :targets
+
+#### Target:
+
  -belongs_to :user
+
  -has_many :target_foods
+
  -has_many :foods, through: :target_foods
+
  -has_many :target_exercises
+
  -has_many :exercises, through: :target_exercises
 
-Food:
+#### Food:
+
  -has_many :target_foods
+
  -has_many :targets, through: :target_foods
 
-Exercise:
+#### Exercise:
+
  -has_many :target_exercises
+
  -has_many :targets, through: :target_exercises
 
-TargetsExercise
+#### TargetsExercise:
+
   -belongs_to :target
+
   -belongs_to :exercise
 
-TargetsFood
+#### TargetsFood
+
   -belongs_to :target
+
   -belongs_to :food
 
 ## HOW TO RUN THE APP
