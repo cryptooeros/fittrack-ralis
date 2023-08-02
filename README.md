@@ -26,7 +26,7 @@ As stated above, many people find a really hard time to maintain a healthy lifes
 With our group members brilliant thinking and innovative minds we thought about this idea and it will help alot of people to keep track of their weight journey loss and their weight journey gain and also to observe the amount of food and intake of their calories that will help them become the best of their best shapes and forms
 
 ## ERD DIAGRAM
-![ERD](../client/src/images/FitTrack.png)
+![ERD](client/src/images/FitTrack.png)
 
 ## HOW TO RUN THE APP
    Setup
@@ -69,3 +69,6 @@ You can edit your food and also your specfic weight
 
 ## FINAL REMARKS
 This is a very important project for people who don't know where to start in their weight loss and weight gain journey
+
+
+[def]: ../client/src/images/FitTrack.png
