@@ -1,6 +1,6 @@
-// import React, { useState } from 'react';
-// import './Login.css';
-// import Swal from 'sweetalert2';
+import React, { useState } from 'react';
+import './Login.css';
+import Swal from 'sweetalert2';
 
 
 
@@ -86,22 +86,49 @@
 
 
 
-
-/*
-  This example requires some changes to your config:
+export default function Login() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
   
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-export default function Example() {
+    const handleSubmit = (event) => {
+      event.preventDefault();
+  
+     
+      console.log(`email: ${email}, Password: ${password}`);
+  
+      fetch('/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data.email);
+          console.log(email);
+          if (data.email === email ) {
+            // Show success alert
+            Swal.fire({
+              icon: 'success',
+              title: 'Login Successful',
+              text: 'Welcome back, Admin!',
+            }); 
+            window.location.href = '/';
+          } else {
+            // Show error alert
+            Swal.fire({
+              icon: 'error',
+              title: 'Login Failed',
+              text: 'Incorrect email or password',
+            });
+          }
+         
+          // handle successful login, e.g. redirect to dashboard
+        })
+        .catch((error) => console.error(error));
+      }
+
   return (
     <>
       {/*
