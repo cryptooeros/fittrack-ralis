@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     colors:{
-      'orange': '#f97316',
+      'orange': '#FF9800',
       'amber' : '#fbbf24',
       'yellow': '#eab308',
     },
@@ -13,3 +13,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+// 'orange': '#f97316',
