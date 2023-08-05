@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './NavBar.css';
+import './Navbar.css';
 import { FcSportsMode } from 'react-icons/fc';
 
 function NavBar() {
