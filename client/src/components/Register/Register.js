@@ -181,6 +181,8 @@ export default function Register() {
                 </label>
                 <div className="mt-1">
                   <input
+                    value={email} 
+                    onChange={(e) => setEmail(e.target.value)}
                     id="email"
                     name="email"
                     type="email"
@@ -197,6 +199,8 @@ export default function Register() {
                 </label>
                 <div className="mt-1">
                   <input
+                    value={gender} 
+                    onChange={(e) => setGender(e.target.value)}
                     id="gender"
                     name="gender"
                     type="gender"
@@ -213,6 +217,8 @@ export default function Register() {
                 </label>
                 <div className="mt-1">
                   <input
+                    value={password} 
+                    onChange={(e) => setPassword(e.target.value)}
                     id="password"
                     name="password"
                     type="password"
@@ -229,6 +235,8 @@ export default function Register() {
                 </label>
                 <div className="mt-1">
                   <input
+                    value={confirmPassword} 
+                    onChange={(e) => setConfirmPassword(e.target.value)}
                     id="password"
                     name="password"
                     type="password"
