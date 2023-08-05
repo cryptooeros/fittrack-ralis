@@ -209,7 +209,7 @@ export default function Example() {
               <div className="flex items-center justify-between">
 
                 <div className="text-sm">
-                  <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  <a href="#" className="font-medium text-orange hover:text-amber focus:ring-yellow ">
                     Have an account?
                   </a>
                 </div>
