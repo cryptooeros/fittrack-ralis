@@ -18,8 +18,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Navigate to="home" />} />
-          <Route path="/home" element={<Home />} />
-     
+          <Route path="/home" element={<Home />} />   
           <Route path="/food" element={<Food />} />
           <Route path="/dashboard" element={<Dashboard/>} />
           <Route path="/targets" element={<Target />} />

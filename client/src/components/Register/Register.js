@@ -53,7 +53,7 @@ export default function Register() {
   };
   return (
     <>
-      {/*
+{/*       
         This example requires updating your template:
 
         ```
@@ -72,7 +72,6 @@ export default function Register() {
             </a>
           </p>
         </div>
-
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <form onSubmit={handleSubmit} className="space-y-6" action="#" method="POST">
@@ -93,7 +92,6 @@ export default function Register() {
                   />
                 </div>
               </div>
-
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                   Email
@@ -129,7 +127,6 @@ export default function Register() {
                   />
                 </div>
               </div>
-
               <div>
                 <label htmlFor="password" className="block text-sm font-medium text-gray-700">
                   Password
@@ -147,7 +144,6 @@ export default function Register() {
                   />
                 </div>
               </div>
-
               <div>
                 <label htmlFor="password" className="block text-sm font-medium text-gray-700">
                   Confirm Password

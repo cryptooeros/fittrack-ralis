@@ -2,7 +2,6 @@
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 // import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
 // import './Footer.css';
 
 // function Footer() {
@@ -63,7 +62,6 @@
 // }
 
 // export default Footer;
-
 
 
 
