@@ -5,51 +5,51 @@ import { useNavigate } from 'react-router-dom';
 import { FcSportsMode } from 'react-icons/fc';
 
 // function Register() {
-//   const [username, setUsername] = useState('');
-//   const [email, setEmail] = useState('');
-//   const [password, setPassword] = useState('');
-//   const [gender, setGender] = useState('');
-//   const navigate = useNavigate();
+  // const [username, setUsername] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
+  // const [gender, setGender] = useState('');
+  // const navigate = useNavigate();
 
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log('Submitted:', { username, email, password, gender });
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log('Submitted:', { username, email, password, gender });
   
-//     fetch('/users', {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json'
-//       },
-//       body: JSON.stringify({ username, email, password, gender })
-//     })
-//       .then(response => {
-//         if (response.ok) {
-//           Swal.fire({
-//             icon: 'success',
-//             title: 'Registration successful!',
-//             timer: 1500,
-//             showConfirmButton: false
-//           });
-//           navigate('/login');
-//         } else {
-//           Swal.fire({
-//             icon: 'error',
-//             title: 'Registration failed.',
-//             timer: 1500,
-//             showConfirmButton: false
-//           });
-//         }
-//       })
-//       .catch(error => {
-//         console.error('Error:', error);
-//         Swal.fire({
-//           icon: 'error',
-//           title: 'An error occurred.',
-//           timer: 1500,
-//           showConfirmButton: false
-//         });
-//       });
-//   };
+  //   fetch('/users', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({ username, email, password, gender })
+  //   })
+  //     .then(response => {
+  //       if (response.ok) {
+  //         Swal.fire({
+  //           icon: 'success',
+  //           title: 'Registration successful!',
+  //           timer: 1500,
+  //           showConfirmButton: false
+  //         });
+  //         navigate('/login');
+  //       } else {
+  //         Swal.fire({
+  //           icon: 'error',
+  //           title: 'Registration failed.',
+  //           timer: 1500,
+  //           showConfirmButton: false
+  //         });
+  //       }
+  //     })
+  //     .catch(error => {
+  //       console.error('Error:', error);
+  //       Swal.fire({
+  //         icon: 'error',
+  //         title: 'An error occurred.',
+  //         timer: 1500,
+  //         showConfirmButton: false
+  //       });
+  //     });
+  // };
   
 //   return (
 //     <div className="register-container">
@@ -86,21 +86,52 @@ import { FcSportsMode } from 'react-icons/fc';
 
 
 
-/*
-  This example requires some changes to your config:
+export default function Register() {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [gender, setGender] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Submitted:', { username, email, password, gender });
   
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-export default function Example() {
+    fetch('/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ username, email, password, gender })
+    })
+      .then(response => {
+        if (response.ok) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Registration successful!',
+            timer: 1500,
+            showConfirmButton: false
+          });
+          navigate('/login');
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Registration failed.',
+            timer: 1500,
+            showConfirmButton: false
+          });
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        Swal.fire({
+          icon: 'error',
+          title: 'An error occurred.',
+          timer: 1500,
+          showConfirmButton: false
+        });
+      });
+  };
   return (
     <>
       {/*
@@ -125,13 +156,15 @@ export default function Example() {
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <form className="space-y-6" action="#" method="POST">
+            <form onSubmit={handleSubmit} className="space-y-6" action="#" method="POST">
               <div>
                 <label htmlFor="username" className="block text-sm font-medium text-gray-700">
                   Username
                 </label>
                 <div className="mt-1">
                   <input
+                    value={username} 
+                    onChange={(e) => setUsername(e.target.value)}
                     id="username"
                     name="username"
                     type="username"
