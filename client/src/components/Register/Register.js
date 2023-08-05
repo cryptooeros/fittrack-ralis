@@ -90,6 +90,7 @@ export default function Register() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [gender, setGender] = useState('');
   const navigate = useNavigate();
 
@@ -102,7 +103,7 @@ export default function Register() {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ username, email, password, gender })
+      body: JSON.stringify({ username, email, password,confirmPassword, gender })
     })
       .then(response => {
         if (response.ok) {
