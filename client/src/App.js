@@ -1,14 +1,14 @@
 // import './App.css';
 import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import AboutUs from "./components/AboutUs";
-import Food from "./components/Food";
-import Home from "./components/Home";
-import Exercise from "./components/Exercise";
-import Target from "./components/Target";
-import Register from "./components/Register";
-import Login from "./components/Login";
-import Footer from "./components/Footer";
+import NavBar from "./components/Navbar/Navbar";
+import AboutUs from "./components/AboutUs/AboutUs";
+import Food from "./components/Food/Food";
+import Home from "./components/Home/Home";
+import Exercise from "./components/Exercise/Exercise";
+import Target from "./components/Target/Target";
+import Register from "./components/Register/Register";
+import Login from "./components/Login/Login";
+import Footer from "./components/Footer/Footer";
 import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
