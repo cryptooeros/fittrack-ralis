@@ -142,7 +142,7 @@ const navigation = {
   ],
 }
 
-export default function Example() {
+export default function Footer() {
   return (
     <footer className="bg-yellow">
       <div className="relative mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">

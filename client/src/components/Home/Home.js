@@ -2,13 +2,9 @@ import React from 'react'
 import Trainer from "../../images/trainer.png"
 // import Exer from "../images/gym-02.png"
 
-
 function Home() {
   return (
-
   <>
-    
-    
     <div className='maincontainer'>
     
       <div className= "container1">
@@ -17,16 +13,11 @@ function Home() {
         <h2>TIME TO GET <b className='pro'>PROLIFE FITNESS</b></h2>
         <p className='planding'> Fit<b className='track'>Track</b>, is a fitness website designed to help users maintain a healthy lifestyle by suggesting recommended
            food and exercises to achieve a specified target</p>
-        
-      
-
         </div>
         <div className='image-container'>
           <img className= "img" src={Trainer}alt='trainerimage'></img>
-        
-
-        </div>
-        
+      
+        </div>      
       </div> 
       <h3><u>Enjoy our services</u></h3>
       <div className='container-two'>
@@ -47,17 +38,12 @@ function Home() {
             . They can range from simple activities such as walking, to more intense workouts like weightlifting and high-intensity
             interval training.
               </p>
-             
-
           </div>
         </div>
         <div className='card'>
-        <h5>FOOD AND NUTRITION</h5> 
-        
+        <h5>FOOD AND NUTRITION</h5>        
           <div className='cardimage'>
-         
-
-          <img className="exercise"
+                   <img className="exercise"
           alt="gym"
           src="https://images.squarespace-cdn.com/content/v1/5d59f351fddabe00013cf3e6/9d48584f-c1a5-414e-addf-403aa6a2d21f/PRE-WORKOUT+NUTRITION.png"
         />
@@ -86,10 +72,6 @@ function Home() {
 
           </div>
         </div>
-         
-
-
-
       </div>
 
     </div>
