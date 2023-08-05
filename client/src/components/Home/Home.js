@@ -1,5 +1,5 @@
 import React from 'react'
-import Trainer from "../images/trainer.png"
+import Trainer from "../../images/trainer.png"
 // import Exer from "../images/gym-02.png"
 
 
