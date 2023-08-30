@@ -161,7 +161,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className="mt-10 mb-20 text-center text-xs leading-5 text-gray-500">
+        <p className="mt-10 -mb-10 text-center text-xs leading-5 text-gray-500">
           &copy; 2023 FitTrack, Inc. All rights reserved.
         </p>
       </div>
