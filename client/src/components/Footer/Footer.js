@@ -153,7 +153,7 @@ export default function Footer() {
             </div>
           ))}
         </nav>
-        <div className="mt-20 flex justify-center space-x-10">
+        <div className="mt-10 flex justify-center space-x-20">
           {navigation.social.map((item) => (
             <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
               <span className="sr-only">{item.name}</span>
@@ -161,7 +161,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className="mt-20 text-center text-xs leading-5 text-gray-500">
+        <p className="mt-10 mb-20 text-center text-xs leading-5 text-gray-500">
           &copy; 2023 FitTrack, Inc. All rights reserved.
         </p>
       </div>
