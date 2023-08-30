@@ -153,7 +153,7 @@ export default function Footer() {
             </div>
           ))}
         </nav>
-        <div className="mt-10 flex justify-center space-x-20">
+        <div className="mt-5  flex justify-center space-x-20">
           {navigation.social.map((item) => (
             <a key={item.name} href={item.href} className="decoration-gray-400 hover:text-gray-500">
               <span className="sr-only">{item.name}</span>
