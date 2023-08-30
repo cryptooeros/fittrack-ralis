@@ -8,6 +8,7 @@ module.exports = {
       'orange': '#FF9800',
       'amber' : '#fbbf24',
       'yellow': '#eab308',
+      'gray': '#111827',
     },
     extend: {},
   },
