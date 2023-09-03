@@ -20,7 +20,7 @@ function AboutUs() {
         </div>
         <div style={{ display: "flex", justifyContent: "center", margin: "20px, 20px " , padding:"10px"}}>
           <div style={{ marginRight: "10px" }}>
-            <a href='https://www.facebook.com/fittrackapp/' target='_blank' rel='noreferrer'>
+            {/* <a href='https://www.facebook.com/fittrackapp/' target='_blank' rel='noreferrer'>
               <FontAwesomeIcon icon={faFacebook} style={{ color: "#4267B2", fontSize:"26" , padding:"3px", margin:"10px, 0px"}} />
             </a>
           </div>
@@ -32,7 +32,7 @@ function AboutUs() {
           <div>
             <a href='https://www.instagram.com/fittrackapp/' target='_blank' rel='noreferrer'>
               <FontAwesomeIcon icon={faInstagram} style={{ color: "#C13584",fontSize:"26" , padding:"3px", margin:"10px, 0px"}} />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
