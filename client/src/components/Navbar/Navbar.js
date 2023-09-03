@@ -135,39 +135,40 @@ export default function NavBar() {
                 <div className="hidden lg:ml-6 lg:block">
                   <div className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    <a href="/home" className="rounded-md text-white px-3 py-2 text-sm font-medium text-white">
+                    <Link to="/home" 
+                      className="rounded-md text-white px-3 py-2 text-sm font-medium text-white">
                       Home
-                    </a>
-                    <a
-                      href="/dashboard"
+                    </Link>
+                    <Link
+                      to="/dashboard"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Dashboard
-                    </a>
-                    <a
-                      href="/targets"
+                    </Link>
+                    <Link
+                      to="/targets"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Targets
-                    </a>
-                    <a
-                      href="/exercises"
+                    </Link>
+                    <Link
+                      to="/exercises"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Exercises
-                    </a>
-                    <a
-                      href="/food"
+                    </Link>
+                    <Link
+                      to="/food"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Food
-                    </a>
-                    <a
-                      href="/aboutus"
+                    </Link>
+                    <Link
+                      to="/aboutus"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       AboutUs
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
