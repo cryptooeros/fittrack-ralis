@@ -4,12 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    colors:{
-      'orange': '#FF9800',
-      'amber' : '#fbbf24',
-      'yellow': '#eab308',
-      'gray': '#111827',
-    },
+    // colors:{
+    //   'orange': '#FF9800',
+    //   'amber' : '#fbbf24',
+    //   'yellow': '#eab308',
+    //   'gray': '#111827',
+    // },
     extend: {},
   },
   plugins: [],
