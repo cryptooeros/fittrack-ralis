@@ -201,10 +201,9 @@ export default function NavBar() {
                 <div className="flex items-center">
                   <button
                     type="button"
-                    className="flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="flex-shrink-0 rounded-full bg-orange p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
-                    <span className="sr-only">View notifications</span>
-                    <BellIcon className="h-6 w-6" aria-hidden="true" />
+                    Login
                   </button>
 
                   {/* Profile dropdown */}
@@ -232,7 +231,7 @@ export default function NavBar() {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href=""
                               className={classNames(
                                 active ? 'bg-gray-100' : '',
                                 'block px-4 py-2 text-sm text-gray-700'
