@@ -167,7 +167,7 @@ export default function NavBar() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
+              {/* <div className="flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
                 <div className="w-full max-w-lg lg:max-w-xs">
                   <label htmlFor="search" className="sr-only">
                     Search
@@ -185,7 +185,7 @@ export default function NavBar() {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="flex lg:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -200,8 +200,9 @@ export default function NavBar() {
               <div className="hidden lg:ml-4 lg:block">
                 <div className="flex items-center">
                   <button
+                    href="/login"
                     type="button"
-                    className="flex-shrink-0 rounded-full bg-orange p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="flex-shrink-0 rounded-full bg-orange p-1 text-white hover:text-yellow focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber"
                   >
                     Login
                   </button>
