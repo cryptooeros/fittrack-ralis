@@ -114,12 +114,16 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FcSportsMode } from 'react-icons/fc';
+import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function NavBar() {
+
+  const navigate = useNavigate();
   return (
     <Disclosure as="nav" className="bg-gray">
       {({ open }) => (
@@ -200,9 +204,9 @@ export default function NavBar() {
               <div className="hidden lg:ml-4 lg:block">
                 <div className="flex items-center">
                   <button
-                    href="/login"
+                    onClick={() => navigate("/login")}
                     type="button"
-                    className="flex-shrink-0 rounded-full bg-orange p-1 text-white hover:text-yellow focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-amber"
+                    className="flex-shrink-0 rounded-full bg-orange p-1 text-white hover:text-yellow focus:outline-none focus:ring-amber focus:ring-white focus:ring-offset-amber focus:ring-offset-amber"
                   >
                     Login
                   </button>
