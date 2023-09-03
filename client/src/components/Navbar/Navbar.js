@@ -119,50 +119,50 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function NavBar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex items-center px-2 lg:px-0">
-                {/* <div className="flex-shrink-0">
-                  <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                  <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  />
-                </div> */}
                 <FcSportsMode size={40} />
                 <div className="hidden lg:ml-6 lg:block">
                   <div className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    <a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">
+                    <a href="/home" className="rounded-md text-white px-3 py-2 text-sm font-medium text-white">
+                      Home
+                    </a>
+                    <a
+                      href="/dashboard"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
+                    >
                       Dashboard
                     </a>
                     <a
-                      href="#"
-                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                      href="/targets"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
-                      Team
+                      Targets
                     </a>
                     <a
-                      href="#"
-                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                      href="/exercises"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
-                      Projects
+                      Exercises
                     </a>
                     <a
-                      href="#"
-                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                      href="/food"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
-                      Calendar
+                      Food
+                    </a>
+                    <a
+                      href="/aboutus"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
+                    >
+                      AboutUs
                     </a>
                   </div>
                 </div>
