@@ -21,7 +21,7 @@ export default function Example() {
 
   return (
     <div className="bg-white">
-      <section className="mt-20 mb-20 relative ">
+      <section className=" mb-20 relative ">
 
         {/* Hero section */}
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">

@@ -85,7 +85,7 @@ const metrics = [
 export default function Example() {
   return (
     <>
-    <div className="relative overflow-hidden bg-gradient-to-b from-green to-yellow">
+    <div className="relative py-10 overflow-hidden bg-gradient-to-b from-green to-yellow">
       <div className="absolute bottom-0 h-80 w-full xl:inset-0 xl:h-full">
         <div className="h-full w-full xl:grid xl:grid-cols-2">
           <div className="h-full xl:relative xl:col-start-2">
@@ -124,8 +124,8 @@ export default function Example() {
         </div>
       </div>
     </div>
-    <Hero/>
     <Cards/>
+    <Hero/>
     </>
   )
 }
