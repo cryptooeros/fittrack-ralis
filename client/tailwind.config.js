@@ -9,6 +9,7 @@ module.exports = {
       'amber' : '#fbbf24',
       'yellow': '#eab308',
       'gray': '#111827',
+      'green':'#22c55e',
     },
     extend: {},
   },
