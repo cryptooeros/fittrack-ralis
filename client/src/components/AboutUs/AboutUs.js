@@ -97,7 +97,7 @@ export default function Example() {
                 </div>
               </div>
 
-              <div className="relative mt-2 py-20 bg-green lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
+              <div className="relative mt-2 py-10 px-10 bg-green lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
                 <div className="absolute inset-0 hidden overflow-hidden rounded-3xl lg:block" aria-hidden="true">
                   <svg
                     className="absolute bottom-full left-full translate-y-1/3 -translate-x-2/3 transform xl:bottom-auto xl:top-0 xl:translate-y-0"
@@ -148,14 +148,14 @@ export default function Example() {
                   <h2 className="text-3xl font-bold tracking-tight text-gray" id="join-heading">
                     Join our team
                   </h2>
-                  <p className="text-lg text-gray">
+                  <p className="text-lg text-white">
                   Fittrack, is a fitness website designed to help users maintain a healthy lifestyle by suggesting recommended food and exercises to achieve a specified target.
                   </p>
-                  <p className="text-lg text-gray">
+                  <p className="text-lg text-white">
                     Our targets are divided into three categories: lose weight, maintain weight, and gain weight. According to each target, a user can get the recommended foods and exercises.
                      After a target is achieved, a user can delete the target and set a new one. Say YES to maintaining a healthy lifestyle.</p>
                   <a
-                    className="block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-blue-700 shadow-md hover:bg-blue-gray-50 sm:inline-block sm:w-auto"
+                    className="block w-full rounded-md border border-transparent bg-orange py-3 px-5 text-center text-base font-medium text-blue-700 shadow-md hover:bg-blue-gray-50 sm:inline-block sm:w-auto"
                     href="#"
                   >
                     Explore open positions
