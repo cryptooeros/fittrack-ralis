@@ -91,12 +91,13 @@ export default function Example() {
                       // src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
                       src = "https://cdn.pixabay.com/photo/2018/02/06/14/07/ease-3134828__340.jpg"
                       alt=""
+                      style={{ width: "150%", height: "150%" }}
                     />
                   </div>
                 </div>
               </div>
 
-              <div className="relative bg-green lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
+              <div className="relative mt-2 py-20 bg-green lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
                 <div className="absolute inset-0 hidden overflow-hidden rounded-3xl lg:block" aria-hidden="true">
                   <svg
                     className="absolute bottom-full left-full translate-y-1/3 -translate-x-2/3 transform xl:bottom-auto xl:top-0 xl:translate-y-0"
@@ -148,9 +149,11 @@ export default function Example() {
                     Join our team
                   </h2>
                   <p className="text-lg text-gray">
-                    Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet
-                    purus dui laoreet diam sed lacus, fames.
+                  Fittrack, is a fitness website designed to help users maintain a healthy lifestyle by suggesting recommended food and exercises to achieve a specified target.
                   </p>
+                  <p className="text-lg text-gray">
+                    Our targets are divided into three categories: lose weight, maintain weight, and gain weight. According to each target, a user can get the recommended foods and exercises.
+                     After a target is achieved, a user can delete the target and set a new one. Say YES to maintaining a healthy lifestyle.</p>
                   <a
                     className="block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-blue-700 shadow-md hover:bg-blue-gray-50 sm:inline-block sm:w-auto"
                     href="#"
