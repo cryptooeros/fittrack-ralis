@@ -68,9 +68,9 @@
 
 const navigation = {
   main: [
-    { name: 'About', href: '#' },
+    { name: 'About', href: '/aboutus' },
     { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
+    { name: 'Contact Us', href: '#' },
     { name: 'Press', href: '#' },
     { name: 'Accessibility', href: '#' },
     { name: 'Partners', href: '#' },
