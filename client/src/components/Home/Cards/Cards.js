@@ -1,4 +1,4 @@
-import { LifebuoyIcon, NewspaperIcon, PhoneIcon, FireIcon } from '@heroicons/react/24/outline'
+import { LifebuoyIcon, ScaleIcon, HeartIcon, FireIcon } from '@heroicons/react/24/outline'
 
 const supportLinks = [
   {
@@ -13,14 +13,14 @@ const supportLinks = [
     href: '#',
     description:
       'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: LifebuoyIcon,
+    icon: ScaleIcon,
   },
   {
     name: 'Cardio Traning',
     href: '#',
     description:
       'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: NewspaperIcon,
+    icon: HeartIcon,
   },
 ]
 
