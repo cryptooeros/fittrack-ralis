@@ -69,11 +69,13 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, LifebuoyIcon, NewspaperIcon, PhoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Contact from '../Contact/Contact'
 
 
 
 export default function Example() {
   return (
+    <>
     <div className="bg-white">
         {/* CTA Section */}
         <section className="relative bg-white" aria-labelledby="join-heading">
@@ -94,7 +96,7 @@ export default function Example() {
                 </div>
               </div>
 
-              <div className="relative bg-yellow lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
+              <div className="relative bg-green lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
                 <div className="absolute inset-0 hidden overflow-hidden rounded-3xl lg:block" aria-hidden="true">
                   <svg
                     className="absolute bottom-full left-full translate-y-1/3 -translate-x-2/3 transform xl:bottom-auto xl:top-0 xl:translate-y-0"
@@ -161,5 +163,7 @@ export default function Example() {
           </div>
         </section>
     </div>
+    <Contact/>
+    </>
   )
 }
