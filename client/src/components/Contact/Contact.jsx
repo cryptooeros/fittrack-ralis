@@ -97,7 +97,7 @@ export default function Contact() {
 
               <div className="grid grid-cols-1 lg:grid-cols-3 shadow rounded-md">
                 {/* Contact information */}
-                <div className="relative overflow-hidden bg-gradient-to-b from-teal-500 to-teal-600 py-10 px-6 sm:px-10 xl:p-12">
+                <div className="relative overflow-hidden bg-gradient-to-b from-green to-yellow py-10 px-6 sm:px-10 xl:p-12">
                   {/* Decorative angle backgrounds */}
                   <div className="pointer-events-none absolute inset-0 sm:hidden" aria-hidden="true">
                     <svg
@@ -196,22 +196,22 @@ export default function Contact() {
                     </svg>
                   </div>
                   <h3 className="mb-2 text-lg font-medium text-white">Contact information</h3>
-                  <p className="mt-6 max-w-3xl text-base text-teal-50">
+                  <p className="mt-6 max-w-3xl text-base text-gray">
                   Do you have general enquiries or need support? Please send us a quick email.
                   </p>
                   <dl className="mt-8 space-y-6">
                     <dt>
                       <span className="sr-only">Phone number</span>
                     </dt>
-                    <dd className="flex text-base text-teal-50">
-                      <PhoneIcon className="h-6 w-6 flex-shrink-0 text-teal-200" aria-hidden="true" />
+                    <dd className="flex text-base text-gray">
+                      <PhoneIcon className="h-6 w-6 flex-shrink-0 text-gray" aria-hidden="true" />
                       <span className="ml-3">+254 710000000</span>
                     </dd>
                     <dt>
                       <span className="sr-only">Email</span>
                     </dt>
                     <dd className="flex text-base text-teal-50">
-                      <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-teal-200" aria-hidden="true" />
+                      <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-gray" aria-hidden="true" />
                       <span className="ml-3">morris.waithaka42@gmail.com</span>
                     </dd>
                   </dl>
@@ -257,7 +257,7 @@ export default function Contact() {
                           name="first_name"
                           id="first-name"
                           autoComplete="given-name"
-                          className="block w-full rounded-md border-warm-gray-300 py-2 px-2 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                          className="block w-full rounded-md border-warm-gray-300 py-2 px-2 text-warm-gray-900 shadow-sm focus:border-green focus:ring-green"
                           onChange={handleChange}
                           
                           value={formData.first_name}
@@ -275,7 +275,7 @@ export default function Contact() {
                           value={formData.last_name}
                           id="last-name"
                           autoComplete="family-name"
-                          className="block w-full rounded-md border-warm-gray-300 py-2 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                          className="block w-full rounded-md border-warm-gray-300 py-2 px-4 text-warm-gray-900 shadow-sm focus:border-green focus:ring-green"
                           onChange={handleChange}
                          
                         />
@@ -293,7 +293,7 @@ export default function Contact() {
                           type="email"
                           autoComplete="email"
                           placeholder='morris.waithaka42@gmail.com'
-                          className="block w-full rounded-md border-warm-gray-300 py-2 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                          className="block w-full rounded-md border-warm-gray-300 py-2 px-4 text-warm-gray-900 shadow-sm focus:border-green focus:ring-green"
                           onChange={handleChange}
                          
                         />
@@ -314,7 +314,7 @@ export default function Contact() {
                           name="phone"
                           id="phone"
                           autoComplete="tel"
-                          className="block w-full rounded-md border-warm-gray-300 py-2 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                          className="block w-full rounded-md border-warm-gray-300 py-2 px-4 text-warm-gray-900 shadow-sm focus:border-green focus:ring-green"
                           aria-describedby="phone-optional"
                           onChange={handleChange}
                          
@@ -331,7 +331,7 @@ export default function Contact() {
                           type="text"
                           name="subject"
                           id="subject"
-                          className="block w-full rounded-md border-warm-gray-300 py-2 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                          className="block w-full rounded-md border-warm-gray-300 py-2 px-4 text-warm-gray-900 shadow-sm focus:border-green focus:ring-green"
                           onChange={handleChange}
                           
                           value={formData.subject}
@@ -352,7 +352,7 @@ export default function Contact() {
                           id="message"
                           name="message"
                           rows={4}
-                          className="block w-full rounded-md border-warm-gray-300 py-2 px-4 text-warm-gray-900 shadow-sm focus:border-teal-500 focus:ring-teal-500"
+                          className="block w-full rounded-md border-warm-gray-300 py-2 px-4 text-warm-gray-900 shadow-sm focus:border-green focus:ring-green"
                           aria-describedby="message-max"
                          
                           onChange={handleChange}
@@ -363,7 +363,7 @@ export default function Contact() {
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
                       <button
                         type="submit"
-                        className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-teal-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 sm:w-auto"
+                        className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-green px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-green focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2 sm:w-auto"
                         
                       >
                         Submit
