@@ -70,7 +70,7 @@ const navigation = {
   main: [
     { name: 'About', href: '/aboutus' },
     { name: 'Blog', href: '#' },
-    { name: 'Contact Us', href: '#' },
+    { name: 'Contact Us', href: '/contactus' },
     { name: 'Press', href: '#' },
     { name: 'Accessibility', href: '#' },
     { name: 'Partners', href: '#' },
