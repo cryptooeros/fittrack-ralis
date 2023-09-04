@@ -1,22 +1,22 @@
-import { LifebuoyIcon, NewspaperIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { LifebuoyIcon, NewspaperIcon, PhoneIcon, FireIcon } from '@heroicons/react/24/outline'
 
 const supportLinks = [
   {
-    name: 'Sales',
+    name: 'Fat Burning',
     href: '#',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: PhoneIcon,
+      'This program is suitable for you who wants to get rid of your fat and lose their weight.',
+    icon: FireIcon,
   },
   {
-    name: 'Technical Support',
+    name: 'Health Fitness',
     href: '#',
     description:
       'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
     icon: LifebuoyIcon,
   },
   {
-    name: 'Media Inquiries',
+    name: 'Cardio Traning',
     href: '#',
     description:
       'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
