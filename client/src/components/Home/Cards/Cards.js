@@ -12,14 +12,14 @@ const supportLinks = [
     name: 'Health Fitness',
     href: '#',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
+      'This program is designed for those who exercise only for thier body fitness and not body building. ',
     icon: ScaleIcon,
   },
   {
     name: 'Cardio Traning',
     href: '#',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
+      'In this program, you are trained to do sequential moves in range of 20 until 30 minutes.',
     icon: HeartIcon,
   },
 ]
