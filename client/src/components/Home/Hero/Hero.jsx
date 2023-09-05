@@ -23,11 +23,12 @@ import img3 from "../../../images/img3.jpg"
 import img4 from "../../../images/img4.jpg"
 import img5 from "../../../images/img5.jpg"
 import img6 from "../../../images/img6.jpg"
+import { Link } from 'react-router-dom'
 
 export default function Example() {
 
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="hero">
       <section className="relative mb-20">
 
         {/* Hero section */}
@@ -113,12 +114,12 @@ export default function Example() {
                   </div>
                 </div>
 
-                <a
-                  href="#"
+                <Link
+                  to="/aboutus"
                   className="inline-block rounded-md border border-transparent bg-orange py-3 px-8 text-center font-medium text-white hover:bg-yellow"
                 >
-                  Track your plan
-                </a>
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>

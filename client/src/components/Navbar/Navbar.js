@@ -114,7 +114,8 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FcSportsMode } from 'react-icons/fc';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link'
 import { useNavigate } from "react-router-dom";
 
 
@@ -136,38 +137,44 @@ export default function NavBar() {
                 <div className="hidden lg:ml-6 lg:block">
                   <div className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    <Link to="/home" 
+                    <Link 
+                      smooth
+                      to="/home" 
                       className="rounded-md text-white px-3 py-2 text-sm font-medium text-white">
                       Home
                     </Link>
                     <Link
+                    smooth
                       to="/dashboard"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Dashboard
                     </Link>
                     <Link
-                      to="cards"
+                    smooth
+                      to="#cards"
                       span={true}
-                      smooth={true}
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Targets
                     </Link>
                     <Link
+                    smooth
                       to="/exercises"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Exercises
                     </Link>
                     <Link
-                      to="/food"
+                    smooth
+                      to="#pricing"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
-                      Food
+                      Plans
                     </Link>
                     <Link
-                      to="/aboutus"
+                    smooth
+                      to="#hero"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       AboutUs

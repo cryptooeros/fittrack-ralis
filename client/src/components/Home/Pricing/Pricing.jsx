@@ -49,7 +49,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <div className="mx-auto max-w-7xl bg-white py-6 px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl bg-white py-6 px-6 lg:px-8" id="pricing">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none lg:text-6xl">
         Ready to start your journey now with us.
       </h2>
