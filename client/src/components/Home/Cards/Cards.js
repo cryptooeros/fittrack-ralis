@@ -26,7 +26,7 @@ const supportLinks = [
 
 export default function Example() {
   return (
-    <div className="relative mt-20 bg-white">
+    <div className="relative mt-20 bg-white" id="cards">
       {/* Overlapping cards */}
       <section className="relative z-10 mx-auto -mt-32 max-w-7xl px-6 pb-6 lg:px-8" aria-labelledby="contact-heading">
         <h2 className="sr-only" id="contact-heading">

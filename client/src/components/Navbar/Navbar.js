@@ -117,6 +117,7 @@ import { FcSportsMode } from 'react-icons/fc';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -146,7 +147,9 @@ export default function NavBar() {
                       Dashboard
                     </Link>
                     <Link
-                      to="/targets"
+                      to="cards"
+                      span={true}
+                      smooth={true}
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Targets
