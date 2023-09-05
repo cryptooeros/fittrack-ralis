@@ -34,7 +34,7 @@ export default function Example() {
         </h2>
         <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
           {supportLinks.map((link) => (
-            <div key={link.name} className="flex flex-col rounded-2xl bg-green shadow-xl">
+            <div key={link.name} className="flex flex-col rounded-2xl bg-green hover:bg-amber shadow-xl">
               <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
                 <div className="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-yellow p-5 shadow-lg">
                   <link.icon className="h-6 w-6 text-white" aria-hidden="true" />
