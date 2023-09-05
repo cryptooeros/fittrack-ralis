@@ -75,6 +75,7 @@
 import Hero from "./Hero/Hero"
 import Cards from "./Cards/Cards"
 import Pricing from "./Pricing/Pricing"
+import Testimonials from "./Testimonials/Testimonials"
 import img from "../../images/img7.jpg"
 
 const metrics = [
@@ -129,6 +130,7 @@ export default function Example() {
     <Cards/>
     <Hero/>
     <Pricing/>
+    <Testimonials/>
     </>
   )
 }
