@@ -74,6 +74,7 @@
 
 import Hero from "./Hero/Hero"
 import Cards from "./Cards/Cards"
+import Pricing from "./Pricing/Pricing"
 import img from "../../images/img7.jpg"
 
 const metrics = [
@@ -127,6 +128,7 @@ export default function Example() {
     </div>
     <Cards/>
     <Hero/>
+    <Pricing/>
     </>
   )
 }
