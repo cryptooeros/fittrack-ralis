@@ -28,18 +28,22 @@ export default function Example() {
 
   return (
     <div className="bg-white">
-      <section className=" mb-20 relative ">
+      <section className="relative mb-20">
 
         {/* Hero section */}
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
               <h1 className="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Summer styles are finally here
+                Train faster and smater than before.
               </h1>
               <p className="mt-4 text-xl text-gray-500">
-                This year, our new summer collection will shelter you from the harsh elements of a world that doesn't
-                care if you live or die.
+                  Exercise and workouts are physical activities that are perfomed to improve health, fitness, and overall well-being.
+                  They can range from simple activities such as walking, to more intense workouts like weightlifting and high-intensity
+                  interval training.<br/>
+                  <br/>
+                  Food and nurtition play an important role in exercise and physical activity. Proper nutrition helps you improve
+                  your atletic perfomances, reduce fatigue , and speed up recovery time after worksouts.
               </p>
             </div>
             <div>
