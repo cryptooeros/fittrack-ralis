@@ -24,8 +24,10 @@ import img4 from "../../../images/img4.jpg"
 import img5 from "../../../images/img5.jpg"
 import img6 from "../../../images/img6.jpg"
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function Example() {
+  const navigate = useNavigate()
 
   return (
     <div className="bg-white" id="hero">
@@ -114,12 +116,12 @@ export default function Example() {
                   </div>
                 </div>
 
-                <Link
-                  to="/aboutus"
+                <a
+                  href="/aboutus"
                   className="inline-block rounded-md border border-transparent bg-orange py-3 px-8 text-center font-medium text-white hover:bg-yellow"
                 >
                   Learn More
-                </Link>
+                  </a>
               </div>
             </div>
           </div>

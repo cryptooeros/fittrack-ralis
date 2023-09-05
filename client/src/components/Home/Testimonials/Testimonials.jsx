@@ -17,7 +17,7 @@ import img1 from "../../../images/img1.jpg"
 
 export default function Example() {
     return (
-      <div className="bg-white pt-16 lg:py-12">
+      <div className="bg-white pt-16 lg:py-12" id="testimonials">
         <div className="bg-gradient-to-b from-green to-yellow pb-16 lg:relative lg:z-10 lg:pb-0">
           <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
             <div className="relative lg:-my-8">

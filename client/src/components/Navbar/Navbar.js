@@ -114,8 +114,9 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FcSportsMode } from 'react-icons/fc';
-// import { Link } from 'react-router-dom';
-import {HashLink as Link} from 'react-router-hash-link'
+import { Link } from 'react-router-dom';
+import {HashLink as Link1} from 'react-router-hash-link'
+// import { Link, animateScroll as scroll } from 'react-scroll'
 import { useNavigate } from "react-router-dom";
 
 
@@ -150,35 +151,46 @@ export default function NavBar() {
                     >
                       Dashboard
                     </Link>
-                    <Link
-                    smooth
-                      to="#cards"
-                      span={true}
+                    <Link1
+                      to="home/#cards"
+                      // spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Targets
-                    </Link>
-                    <Link
-                    smooth
-                      to="/exercises"
-                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
-                    >
-                      Exercises
-                    </Link>
-                    <Link
-                    smooth
-                      to="#pricing"
+                    </Link1>
+                    <Link1
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      to="home/#pricing"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Plans
-                    </Link>
-                    <Link
-                    smooth
-                      to="#hero"
+                    </Link1>
+                    <Link1
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      to="home/#hero"
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       AboutUs
-                    </Link>
+                    </Link1>
+                    <Link1
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      to="home/#testimonials"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
+                    >
+                      Testimonials
+                    </Link1>
                   </div>
                 </div>
               </div>
