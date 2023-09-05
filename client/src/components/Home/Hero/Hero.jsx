@@ -115,7 +115,7 @@ export default function Example() {
 
                 <a
                   href="#"
-                  className="inline-block rounded-md border border-transparent bg-orange py-3 px-8 text-center font-medium text-white hover:bg-indigo-700"
+                  className="inline-block rounded-md border border-transparent bg-orange py-3 px-8 text-center font-medium text-white hover:bg-yellow"
                 >
                   Track your plan
                 </a>
