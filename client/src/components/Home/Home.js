@@ -74,6 +74,7 @@
 
 import Hero from "./Hero/Hero"
 import Cards from "./Cards/Cards"
+import img from "../../images/img7.jpg"
 
 const metrics = [
   { id: 1, stat: '20+', emphasis: 'Expert', rest: 'coaches at your service.' },
@@ -90,8 +91,8 @@ export default function Example() {
         <div className="h-full w-full xl:grid xl:grid-cols-2">
           <div className="h-full xl:relative xl:col-start-2">
             <img
-              className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-              src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+              className="h-full w-full object-cover opacity-18 xl:absolute xl:inset-0"
+              src={img}
               alt="People working on laptops"
             />
             <div
