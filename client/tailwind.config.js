@@ -10,6 +10,7 @@ const colors = {
       'yellow': '#eab308',
       'gray': '#111827',
       'green':'#22c55e',
+      'lime':'#84cc16',
     },
 }
 module.exports = {
