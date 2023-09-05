@@ -39,11 +39,11 @@ export default function Example() {
                 <div className="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl bg-yellow p-5 shadow-lg">
                   <link.icon className="h-6 w-6 text-white" aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
-                <p className="mt-4 text-base text-gray-500">{link.description}</p>
+                <h3 className="text-2xl font-medium text-gray">{link.name}</h3>
+                <p className="mt-4 text-lg text-gray">{link.description}</p>
               </div>
               <div className="rounded-bl-2xl rounded-br-2xl bg-gray-50 p-6 md:px-8">
-                <a href={link.href} className="text-base font-medium text-indigo-700 hover:text-indigo-600">
+                <a href={link.href} className="text-md font-medium text-white hover:text-indigo-600">
                   Contact us<span aria-hidden="true"> &rarr;</span>
                 </a>
               </div>
