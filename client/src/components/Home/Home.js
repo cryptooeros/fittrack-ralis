@@ -77,12 +77,13 @@ import Cards from "./Cards/Cards"
 import Pricing from "./Pricing/Pricing"
 import Testimonials from "./Testimonials/Testimonials"
 import img from "../../images/img7.jpg"
+import NumberCounter from 'number-counter'
 
 const metrics = [
-  { id: 1, stat: '20+', emphasis: 'Expert', rest: 'coaches at your service.' },
-  { id: 2, stat: '300+', emphasis: 'Members', rest: 'have joined the program.' },
-  { id: 3, stat: '98%', emphasis: 'Customer', rest: 'satisfaction and positive feedback.' },
-  { id: 4, stat: '15+', emphasis: 'Fitness', rest: 'programs and continuing.' },
+  { id: 1, stat: 25, emphasis: 'Expert', rest: 'coaches at your service.' },
+  { id: 2, stat: 300, emphasis: 'Members', rest: 'have joined the program.' },
+  { id: 3, stat: 98, emphasis: 'Customer', rest: 'satisfaction and positive feedback.' },
+  { id: 4, stat: 15, emphasis: 'Fitness', rest: 'programs and continuing.' },
 ]
 
 export default function Example() {
@@ -116,8 +117,20 @@ export default function Example() {
           </p>
           <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
             {metrics.map((item) => (
+              item.id===3?
               <p key={item.id}>
-                <span className="block text-2xl font-bold text-white">{item.stat}</span>
+                <span className="block text-2xl font-bold text-white">
+                  <NumberCounter end={item.stat} start={30} delay='4' postFix="%"/>
+                </span>
+                <span className="mt-1 block text-lg text-gray">
+                  <span className="font-medium text-white">{item.emphasis}</span> {item.rest}
+                </span>
+              </p>
+              :
+              <p key={item.id}>
+                <span className="block text-2xl font-bold text-white">
+                  <NumberCounter end={item.stat} start={5} delay='4' preFix="+"/>
+                </span>
                 <span className="mt-1 block text-lg text-gray">
                   <span className="font-medium text-white">{item.emphasis}</span> {item.rest}
                 </span>

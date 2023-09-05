@@ -144,6 +144,16 @@ export default function NavBar() {
                       className="rounded-md text-white px-3 py-2 text-sm font-medium text-white">
                       Home
                     </Link>
+                    <Link1
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                      to="home/#hero"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
+                    >
+                      AboutUs
+                    </Link1>
                     <Link
                     smooth
                       to="/dashboard"
@@ -170,16 +180,6 @@ export default function NavBar() {
                       className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
                     >
                       Plans
-                    </Link1>
-                    <Link1
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={500}
-                      to="home/#hero"
-                      className="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"
-                    >
-                      AboutUs
                     </Link1>
                     <Link1
                       spy={true}
