@@ -126,7 +126,7 @@ export default function Example() {
             {metrics.map((item) => (
               item.id===3?
               <p key={item.id}>
-                <span className="block text-2xl font-bold text-white">
+                <span className="block text-3xl font-bold text-white">
                   <NumberCounter end={item.stat} start={30} delay='4' postFix="%"/>
                 </span>
                 <span className="mt-1 block text-lg text-gray">
@@ -135,7 +135,7 @@ export default function Example() {
               </p>
               :
               <p key={item.id}>
-                <span className="block text-2xl font-bold text-white">
+                <span className="block text-3xl font-bold text-white">
                   <NumberCounter end={item.stat} start={5} delay='4' preFix="+"/>
                 </span>
                 <span className="mt-1 block text-lg text-gray">
