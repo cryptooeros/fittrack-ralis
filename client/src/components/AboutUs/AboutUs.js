@@ -26,6 +26,7 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, LifebuoyIcon, NewspaperIcon, PhoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Contact from '../Contact/Contact'
+import { HashLink as Link } from 'react-router-hash-link'
 
 
 
@@ -111,12 +112,12 @@ export default function Example() {
                   <p className="text-lg text-white">
                     Our targets are divided into three categories: lose weight, maintain weight, and gain weight. According to each target, a user can get the recommended foods and exercises.
                      After a target is achieved, a user can delete the target and set a new one. Say YES to maintaining a healthy lifestyle.</p>
-                  <a
+                  <Link
                     className="block w-full rounded-md border border-transparent bg-amber py-3 px-5 text-center text-base font-medium text-gray shadow-md hover:bg-blue-gray-50 sm:inline-block sm:w-auto"
-                    href="#"
+                    to="/home/#cards"
                   >
                     Explore your options
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
