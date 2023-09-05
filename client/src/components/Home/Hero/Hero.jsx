@@ -125,7 +125,7 @@ export default function Example() {
                 </motion.div>
                 <motion.div
                 whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
+                // whileTap={{ scale: 0.9 }}
                 >
                   <Link
                   to="/aboutus/#aboutus"
