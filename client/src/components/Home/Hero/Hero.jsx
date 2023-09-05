@@ -25,6 +25,7 @@ import img5 from "../../../images/img5.jpg"
 import img6 from "../../../images/img6.jpg"
 import { HashLink as Link } from 'react-router-hash-link'
 import { useNavigate } from 'react-router-dom'
+import {motion} from "framer-motion"
 
 export default function Example() {
   const navigate = useNavigate()
@@ -51,14 +52,20 @@ export default function Example() {
             <div>
               <div className="mt-10">
                 {/* Decorative image grid */}
-                <div
+                <motion.div
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 1.1 }}
+                  drag="x"
+                  dragConstraints={{ left: -100, right: 100 }}
                   aria-hidden="true"
                   className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
                 >
                   <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                     <div className="flex items-center space-x-6 lg:space-x-8">
-                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                      <div 
+                      className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div 
+                        className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                           <img
                             src={img}
                             alt=""
@@ -114,7 +121,7 @@ export default function Example() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
 
                 <Link
                   to="/aboutus/#aboutus"

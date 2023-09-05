@@ -71,13 +71,14 @@
 // export default Home
 
 
-
+import React from "react"
 import Hero from "./Hero/Hero"
 import Cards from "./Cards/Cards"
 import Pricing from "./Pricing/Pricing"
 import Testimonials from "./Testimonials/Testimonials"
 import img from "../../images/img7.jpg"
 import NumberCounter from 'number-counter'
+import { motion } from "framer-motion"
 
 const metrics = [
   { id: 1, stat: 25, emphasis: 'Expert', rest: 'coaches at your service.' },
@@ -87,22 +88,28 @@ const metrics = [
 ]
 
 export default function Example() {
+
   return (
     <>
     <div className="relative py-10 overflow-hidden bg-gradient-to-b from-green to-yellow">
       <div className="absolute bottom-0 h-80 w-full xl:inset-0 xl:h-full">
         <div className="h-full w-full xl:grid xl:grid-cols-2">
-          <div className="h-full xl:relative xl:col-start-2">
+          <motion.div 
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.1 }}
+              drag="x"
+              dragConstraints={{ left: -100, right: 100 }}
+            className="h-full xl:relative xl:col-start-2">
             <img
               className="h-full w-full object-cover opacity-18 xl:absolute xl:inset-0"
               src={img}
-              alt="People working on laptops"
+              alt="Woman doing yoga"
             />
             <div
               aria-hidden="true"
               className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="mx-auto max-w-4xl px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-flow-col-dense xl:grid-cols-2 xl:gap-x-8">

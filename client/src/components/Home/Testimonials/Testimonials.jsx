@@ -14,8 +14,13 @@
 */
 
 import img1 from "../../../images/img1.jpg"
+import { motion } from "framer-motion"
 
 export default function Example() {
+
+  const transition = {type:'spring', duration: 5}
+  
+  
     return (
       <div className="bg-white pt-16 lg:py-12" id="testimonials">
         <div className="bg-gradient-to-b from-green to-yellow pb-16 lg:relative lg:z-10 lg:pb-0">
@@ -24,7 +29,10 @@ export default function Example() {
               <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden" />
               <div className="mx-auto max-w-md px-6 sm:max-w-3xl lg:h-full lg:p-0">
                 <div className="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl shadow-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                  <img
+                  <motion.img
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={transition}
                     className="object-cover lg:h-full lg:w-full"
                     // src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
                     src={img1}
