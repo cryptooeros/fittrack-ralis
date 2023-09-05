@@ -43,8 +43,8 @@ export default function Example() {
                 <p className="mt-4 text-lg text-gray">{link.description}</p>
               </div>
               <div className="rounded-bl-2xl rounded-br-2xl bg-gray-50 p-6 md:px-8">
-                <a href={link.href} className="text-md font-medium text-white hover:text-indigo-600">
-                  Contact us<span aria-hidden="true"> &rarr;</span>
+                <a href={link.href} className="text-lg font-medium text-white hover:text-indigo-600">
+                  Explore<span aria-hidden="true"> &rarr;</span>
                 </a>
               </div>
             </div>
