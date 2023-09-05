@@ -44,7 +44,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="bg-white mb-5">
+    <div className="bg-white mb-5" id="contact">
       <main className="overflow-hidden">
         {/* Header */}
         <div className="bg-warm-gray-50">

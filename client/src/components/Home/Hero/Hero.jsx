@@ -23,7 +23,7 @@ import img3 from "../../../images/img3.jpg"
 import img4 from "../../../images/img4.jpg"
 import img5 from "../../../images/img5.jpg"
 import img6 from "../../../images/img6.jpg"
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import { useNavigate } from 'react-router-dom'
 
 export default function Example() {
@@ -116,12 +116,12 @@ export default function Example() {
                   </div>
                 </div>
 
-                <a
-                  href="/aboutus"
+                <Link
+                  to="/aboutus/#aboutus"
                   className="inline-block rounded-md border border-transparent bg-orange py-3 px-8 text-center font-medium text-white hover:bg-yellow"
                 >
                   Learn More
-                  </a>
+                  </Link>
               </div>
             </div>
           </div>

@@ -32,7 +32,7 @@ import Contact from '../Contact/Contact'
 export default function Example() {
   return (
     <>
-    <div className="bg-white">
+    <div className="bg-white" id="aboutus">
         {/* CTA Section */}
         <section className="relative bg-white" aria-labelledby="join-heading">
           <div className="absolute inset-x-0 hidden h-1/2 bg-blue-gray-50 lg:block" aria-hidden="true" />
