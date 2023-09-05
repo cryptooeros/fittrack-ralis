@@ -64,12 +64,13 @@ export default function Example() {
         {pricing.tiers.map((tier) => (
           <div
             key={tier.title}
-            className="relative flex flex-col rounded-2xl border border-gray-200 bg-white p-8 shadow-sm"
+            className="relative flex flex-col rounded-2xl border border-gray-200 bg-amber p-8 shadow-lg"
+            // classname="flex h-full flex-col overflow-hidden rounded-lg shadow-lg lg:rounded-none lg:rounded-l-lg"
           >
             <div className="flex-1">
-              <h3 className="text-xl font-semibold text-gray-900">{tier.title}</h3>
+              <h3 className="text-xl font-semibold text-gray">{tier.title}</h3>
               {tier.mostPopular ? (
-                <p className="absolute top-0 -translate-y-1/2 transform rounded-full bg-indigo-500 py-1.5 px-4 text-sm font-semibold text-white">
+                <p className="absolute top-0 -translate-y-1/2 transform rounded-full bg-green py-1.5 px-4 text-sm font-semibold text-white">
                   Most popular
                 </p>
               ) : null}
