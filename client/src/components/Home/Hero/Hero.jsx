@@ -111,7 +111,8 @@ export default function Example() {
                             className="h-full w-full object-cover object-center"
                           />
                         </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                        <div 
+                        className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
                             src={img6}
                             alt=""
@@ -122,13 +123,18 @@ export default function Example() {
                     </div>
                   </div>
                 </motion.div>
-
-                <Link
+                <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                >
+                  <Link
                   to="/aboutus/#aboutus"
                   className="inline-block rounded-md border border-transparent bg-orange py-3 px-8 text-center font-medium text-white hover:bg-yellow"
                 >
                   Learn More
                   </Link>
+                </motion.div>
+                
               </div>
             </div>
           </div>

@@ -62,7 +62,7 @@ export default function Example() {
         {pricing.tiers.map((tier) => (
           <div
             key={tier.title}
-            className="relative flex flex-col rounded-2xl border border-gray-200 bg-amber p-8 shadow-lg"
+            className="relative flex flex-col rounded-2xl border border-gray-200 bg-amber hover:bg-lime p-8 shadow-lg"
             // classname="flex h-full flex-col overflow-hidden rounded-lg shadow-lg lg:rounded-none lg:rounded-l-lg"
           >
             <div className="flex-1">
