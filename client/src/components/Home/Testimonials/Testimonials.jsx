@@ -18,7 +18,7 @@ import { motion } from "framer-motion"
 
 export default function Example() {
 
-  const transition = {type:'spring', duration: 5}
+  const transition = {type:'spring', duration: 6}
   
   
     return (
@@ -33,6 +33,11 @@ export default function Example() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={transition}
+                    animate={{
+                      scale: [1, 2, 2, 1, 1],
+                      rotate: [0, 0, 270, 270, 0],
+                      // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                    }}
                     className="object-cover lg:h-full lg:w-full"
                     // src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
                     src={img1}
