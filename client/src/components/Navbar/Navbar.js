@@ -128,10 +128,10 @@ export default function NavBar() {
 
   const navigate = useNavigate();
   return (
-    <Disclosure as="nav" className="bg-gray">
+    <Disclosure as="nav" className="bg-gray sticky top-0 z-50">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8 ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex items-center px-2 lg:px-0">
                 <FcSportsMode size={40} />
