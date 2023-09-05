@@ -38,8 +38,7 @@ export default function Example() {
                 Train faster and smater than before.
               </h1>
               <p className="mt-4 text-xl text-gray-500">
-                  Exercise and workouts are physical activities that are perfomed to improve health, fitness, and overall well-being.
-                  They can range from simple activities such as walking, to more intense workouts like weightlifting and high-intensity
+                  Improve your health, fitness, and overall well-being with simple activities such as walking, to more intense workouts like weightlifting and high-intensity
                   interval training.<br/>
                   <br/>
                   Food and nurtition play an important role in exercise and physical activity. Proper nutrition helps you improve
@@ -118,7 +117,7 @@ export default function Example() {
                   href="#"
                   className="inline-block rounded-md border border-transparent bg-orange py-3 px-8 text-center font-medium text-white hover:bg-indigo-700"
                 >
-                  Shop Collection
+                  Track your plan
                 </a>
               </div>
             </div>
