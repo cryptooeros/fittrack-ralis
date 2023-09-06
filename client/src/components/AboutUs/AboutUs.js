@@ -121,7 +121,7 @@ export default function Example() {
                     Our targets are divided into three categories: lose weight, maintain weight, and gain weight. According to each target, a user can get the recommended foods and exercises.
                      After a target is achieved, a user can delete the target and set a new one. Say YES to maintaining a healthy lifestyle.</p>
                   <Link
-                    className="block w-full rounded-md border border-transparent bg-amber py-3 px-5 text-center text-base font-medium text-gray shadow-md hover:bg-blue-gray-50 sm:inline-block sm:w-auto"
+                    className="block w-full rounded-md border border-transparent bg-amber hover:bg-green py-3 px-5 text-center text-base font-medium text-gray shadow-md hover:bg-blue-gray-50 sm:inline-block sm:w-auto"
                     to="/home/#cards"
                   >
                     Explore your options
