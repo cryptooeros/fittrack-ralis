@@ -28,6 +28,7 @@ import { Bars3Icon, LifebuoyIcon, NewspaperIcon, PhoneIcon, XMarkIcon } from '@h
 import Contact from '../Contact/Contact'
 import { HashLink as Link } from 'react-router-hash-link'
 import {motion} from "framer-motion"
+import img from "../../images/yogadrop.jpg"
 
 
 
@@ -52,7 +53,8 @@ export default function Example() {
                     <img
                       className="rounded-3xl object-cover object-center shadow-2xl"
                       // src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
-                      src = "https://cdn.pixabay.com/photo/2018/02/06/14/07/ease-3134828__340.jpg"
+                      // src = "https://cdn.pixabay.com/photo/2018/02/06/14/07/ease-3134828__340.jpg"
+                      src={img}
                       alt=""
                       style={{ width: "150%", height: "150%" }}
                     />
