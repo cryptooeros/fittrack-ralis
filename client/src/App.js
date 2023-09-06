@@ -1,5 +1,4 @@
-// import './App.css';
-import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
+import { Route, Routes, BrowserRouter} from "react-router-dom";
 import NavBar from "./components/Navbar/Navbar";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Food from "./components/Food/Food";
@@ -21,17 +20,17 @@ function App() {
       <AuthProvider>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Navigate to="home" />} />
-          <Route path="/home" element={<Home />} />   
-          <Route path="/food" element={<Food />} />
-          <Route path="/dashboard" element={<Dashboard/>} />
-          <Route path="/targets" element={<Target />} />
-          <Route path="/exercise" element={<Exercise />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/contactus" element={<Contact/>}/>
-          <Route path="/cards" element={<Cards/>}/>
+          <Route index path='/' element={<Home/>} />
+          <Route exact path="/home" element={<Home />} />   
+          <Route exact path="/food" element={<Food />} />
+          <Route exact path="/dashboard" element={<Dashboard/>} />
+          <Route exact path="/targets" element={<Target />} />
+          <Route exact path="/exercise" element={<Exercise />} />
+          <Route exact path="/register" element={<Register />} />
+          <Route exact path="/aboutus" element={<AboutUs />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/contactus" element={<Contact/>}/>
+          <Route exact path="/cards" element={<Cards/>}/>
         </Routes>
         </AuthProvider>
       </BrowserRouter>

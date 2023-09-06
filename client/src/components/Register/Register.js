@@ -165,7 +165,7 @@ export default function Register() {
               <div className="flex items-center justify-between">
 
                 <div className="text-sm">
-                  <a href="#" className="font-medium text-orange hover:text-amber focus:ring-yellow ">
+                  <a href="/login" className="font-medium text-orange hover:text-amber focus:ring-yellow ">
                     Have an account?
                   </a>
                 </div>
