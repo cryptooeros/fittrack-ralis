@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import './Login.css';
 import Swal from 'sweetalert2';
 import { FcSportsMode } from 'react-icons/fc';
+import { AuthContext } from "../../context/AuthContext"
 
 export default function Login() {
     const [email, setEmail] = useState('');

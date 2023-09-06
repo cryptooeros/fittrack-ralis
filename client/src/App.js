@@ -12,11 +12,13 @@ import Footer from "./components/Footer/Footer";
 import Dashboard from './components/Dashboard/Dashboard';
 import Contact from "./components/Contact/Contact";
 import Cards from "./components/Home/Cards/Cards"
+import {  AuthProvider } from './context/AuthContext';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <AuthProvider>
         <NavBar />
         <Routes>
           <Route path="/" element={<Navigate to="home" />} />
@@ -31,6 +33,7 @@ function App() {
           <Route path="/contactus" element={<Contact/>}/>
           <Route path="/cards" element={<Cards/>}/>
         </Routes>
+        </AuthProvider>
       </BrowserRouter>
       <Footer />
     </div>
