@@ -27,6 +27,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, LifebuoyIcon, NewspaperIcon, PhoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Contact from '../Contact/Contact'
 import { HashLink as Link } from 'react-router-hash-link'
+import {motion} from "framer-motion"
 
 
 
@@ -42,7 +43,12 @@ export default function Example() {
               <div className="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16">
                 <div className="absolute inset-x-0 h-1/2 bg-blue-gray-50 lg:hidden" aria-hidden="true" />
                 <div className="mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:p-0">
-                  <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+                  <motion.div 
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 1.1 }}
+                    drag="x"
+                    dragConstraints={{ left: -100, right: 100 }}
+                    className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                     <img
                       className="rounded-3xl object-cover object-center shadow-2xl"
                       // src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
@@ -50,7 +56,7 @@ export default function Example() {
                       alt=""
                       style={{ width: "150%", height: "150%" }}
                     />
-                  </div>
+                  </motion.div>
                 </div>
               </div>
 
