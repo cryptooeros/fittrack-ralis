@@ -136,7 +136,7 @@ export default function Example() {
               :
               <p key={item.id}>
                 <span className="block text-3xl font-bold text-white">
-                  <NumberCounter end={item.stat} start={5} delay='4' preFix="+"/>
+                  <NumberCounter end={item.stat} start={5} delay='4' postFix="+"/>
                 </span>
                 <span className="mt-1 block text-lg text-gray">
                   <span className="font-medium text-white">{item.emphasis}</span> {item.rest}
