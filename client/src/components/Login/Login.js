@@ -5,46 +5,19 @@ import { FcSportsMode } from 'react-icons/fc';
 import { AuthContext } from "../../context/AuthContext"
 
 export default function Login() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const {login} = useContext(AuthContext)
+    const [formData, setFormData] = useState({})
   
     const handleSubmit = (event) => {
       event.preventDefault();
-  
-     
-      console.log(`email: ${email}, Password: ${password}`);
-  
-      fetch('/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data.email);
-          console.log(email);
-          if (data.email === email ) {
-            // Show success alert
-            Swal.fire({
-              icon: 'success',
-              title: 'Login Successful',
-              text: 'Welcome back, Admin!',
-            }); 
-            window.location.href = '/';
-          } else {
-            // Show error alert
-            Swal.fire({
-              icon: 'error',
-              title: 'Login Failed',
-              text: 'Incorrect email or password',
-            });
-          }
-         
-          // handle successful login, e.g. redirect to dashboard
+      login(formData)
+      }
+
+      function handleChange(e) {
+        setFormData({
+          ...formData,
+          [e.target.name]: e.target.value
         })
-        .catch((error) => console.error(error));
       }
 
   return (
@@ -71,7 +44,7 @@ export default function Login() {
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-            <form className="space-y-6" action="#" method="POST" onSubmit={handleSubmit}>
+            <form className="space-y-6" action="#" method="POST" onSubmit={(event) => handleSubmit(event)}>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                   Email address
@@ -79,7 +52,7 @@ export default function Login() {
                 <div className="mt-1">
                   <input
                     value={email}
-                    onChange={(event) => setEmail(event.target.value)}
+                    onChange={handleChange}
                     id="email"
                     name="email"
                     type="email"
@@ -102,7 +75,7 @@ export default function Login() {
                     autoComplete="current-password"
                     required
                     value={password}
-                    onChange={(event) => setPassword(event.target.value)}
+                    onChange={handleChange}
                     className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   />
                 </div>
