@@ -23,8 +23,6 @@
   ```
 */
 import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, LifebuoyIcon, NewspaperIcon, PhoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Contact from '../Contact/Contact'
 import { HashLink as Link } from 'react-router-hash-link'
 import {motion} from "framer-motion"

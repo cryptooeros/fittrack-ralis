@@ -1,4 +1,4 @@
-import {createContext, useState, useEffect } from 'react'
+import {createContext, useState} from 'react'
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
 
@@ -14,37 +14,43 @@ function AuthProvider({children}){
 
     // fetch the user
     function login(formData){
-        fetch('/login', {
+        fetch('/login',{
             method: 'POST',
             headers: {
-              'Content-Type': 'application/json',
+              "Accept": 'application/json',
+              "Content-Type": 'application/json'
             },
-            body: JSON.stringify({ email, password }),
+            body: JSON.stringify(formData)
           })
-            .then((response) => response.json())
-            .then((data) => {
-              console.log(data.email);
-              console.log(email);
-              if (data.email === email ) {
-                // Show success alert
+          .then(res => res.json())
+          .then(data => {
+            
+            if (data.errors){
                 Swal.fire({
-                  icon: 'success',
-                  title: 'Login Successful',
-                  text: 'Welcome back, Admin!',
-                }); 
-                window.location.href = '/';
-              } else {
-                // Show error alert
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: data.errors,
+                  })
+            }
+            else if(data.user){
                 Swal.fire({
-                  icon: 'error',
-                  title: 'Login Failed',
-                  text: 'Incorrect email or password',
-                });
-              }
-             
-              // handle successful login, e.g. redirect to dashboard
-            })
-            .catch((error) => console.error(error));
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Logged In Successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+                  setUser(data.user)
+                  setLoggedIn(data.logged_in)
+                  navigate('/')
+            }else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Login Failed',
+                    text: 'Invalid Email or Password!',
+                  })
+            }
+          })
     }
 
 
@@ -59,7 +65,6 @@ function AuthProvider({children}){
           })
           .then(res => res.json())
           .then(data => {
-            localStorage.setItem("jwt", data.jwt);
             if (data.errors){
                 Swal.fire({
                     icon: 'error',
@@ -85,23 +90,22 @@ function AuthProvider({children}){
           })
     }
 
-    // check if user is logged in
-    useEffect(()=>{
-        fetch("/me",{
-            method: "GET",
-            headers:{
-                "Content-Type": "application/json",
-                "Authorization": `Bearer ${token}`
-            },
-        }
-        )
-        .then(res=>res.json())
-        .then(response=>{
-            setUser(response.user)
-            setLoggedIn(response.logged_in)
-        }
-        )
-    }, [token])
+    // // check if user is logged in
+    // useEffect(()=>{
+    //     fetch("/me",{
+    //         method: "GET",
+    //         headers:{
+    //             "Content-Type": "application/json",
+    //         },
+    //     }
+    //     )
+    //     .then(res=>res.json())
+    //     .then(response=>{
+    //         setUser(response.user)
+    //         setLoggedIn(response.logged_in)
+    //     }
+    //     )
+    // })
 
     //logout
     function handleSignOut(e) {
@@ -109,8 +113,6 @@ function AuthProvider({children}){
             method: "DELETE"
         })
         .then(response=>{
-            // localStorage.setItem("jwt", null)
-            localStorage.removeItem("jwt")
             setLoggedIn(false)
             Swal.fire({
                 position: 'center',
@@ -130,7 +132,6 @@ function AuthProvider({children}){
         loggedIn,
         handleSignOut,
         user,
-        token
       }
 
     return (

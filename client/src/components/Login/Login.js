@@ -1,6 +1,4 @@
 import React, { useState,useContext } from 'react';
-import './Login.css';
-import Swal from 'sweetalert2';
 import { FcSportsMode } from 'react-icons/fc';
 import { AuthContext } from "../../context/AuthContext"
 
@@ -51,7 +49,6 @@ export default function Login() {
                 </label>
                 <div className="mt-1">
                   <input
-                    value={email}
                     onChange={handleChange}
                     id="email"
                     name="email"
@@ -74,7 +71,6 @@ export default function Login() {
                     type="password"
                     autoComplete="current-password"
                     required
-                    value={password}
                     onChange={handleChange}
                     className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   />
