@@ -109,7 +109,7 @@
   }
   ```
 */
-import { Fragment } from 'react'
+import { Fragment, useContext } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -118,6 +118,7 @@ import { Link } from 'react-router-dom';
 import {HashLink as Link1} from 'react-router-hash-link'
 // import { Link, animateScroll as scroll } from 'react-scroll'
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from '../../context/AuthContext';
 
 
 function classNames(...classes) {
@@ -126,6 +127,7 @@ function classNames(...classes) {
 
 export default function NavBar() {
 
+  const {loggedIn} = useContext(AuthContext)
   const navigate = useNavigate();
   return (
     <Disclosure as="nav" className="bg-gray sticky top-0 z-50">
