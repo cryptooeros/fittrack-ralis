@@ -1,10 +1,12 @@
 import React, { useState,useContext } from 'react';
 import { FcSportsMode } from 'react-icons/fc';
 import { AuthContext } from "../../context/AuthContext"
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
     const {login} = useContext(AuthContext)
     const [formData, setFormData] = useState({})
+    const navigate = useNavigate()
   
     const handleSubmit = (event) => {
       event.preventDefault();
@@ -34,9 +36,9 @@ export default function Login() {
           <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Sign in to your account</h2>
           <p className="mt-2 text-center text-sm text-gray-600">
             Or{' '}
-            <a href="/register" className="font-medium text-orange hover:text-amber focus:ring-yellow ">
+            <button onClick={()=>navigate("/register")} className="font-medium text-orange hover:text-amber focus:ring-yellow ">
               Sign Up to FitTrack
-            </a>
+            </button>
           </p>
         </div>
 
