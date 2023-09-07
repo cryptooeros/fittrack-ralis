@@ -8,7 +8,7 @@ const AuthContext = createContext()
 function AuthProvider({children}){
 
     const [user, setUser] = useState()
-    const [loggedIn, setLoggedIn] = useState()
+    const [loggedIn, setLoggedIn] = useState(false)
 
     const navigate = useNavigate()
 
@@ -32,7 +32,7 @@ function AuthProvider({children}){
                     text: data.errors,
                   })
             }
-            else if(data.email===formData.email){
+            else if(data.user.email===formData.email){
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
@@ -101,11 +101,12 @@ function AuthProvider({children}){
         )
         .then(res=>res.json())
         .then(response=>{
+            console.log(response)
             setUser(response.user)
             setLoggedIn(response.logged_in)
         }
         )
-    },[])
+    },[loggedIn])
 
     //logout
     function handleSignOut(e) {
@@ -113,6 +114,7 @@ function AuthProvider({children}){
             method: "DELETE"
         })
         .then(response=>{
+            console.log(response)
             setLoggedIn(false)
             Swal.fire({
                 position: 'center',
