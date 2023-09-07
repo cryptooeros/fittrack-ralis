@@ -119,6 +119,8 @@ import {HashLink as Link1} from 'react-router-hash-link'
 // import { Link, animateScroll as scroll } from 'react-scroll'
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from '../../context/AuthContext';
+import avatar from "../../images/avatar.png"
+import avatar1 from "../../images/avatar1.png"
 
 
 function classNames(...classes) {
@@ -238,8 +240,9 @@ export default function NavBar() {
                          <Menu.Button className="flex rounded-full bg-gray-800 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                            <span className="sr-only">Open user menu</span>
                            <img
-                             className="h-8 w-8 rounded-full"
-                             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                             className="h-11 w-11 rounded-full bg-gray"
+                            //  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                              src={avatar1}
                              alt=""
                            />
                          </Menu.Button>
@@ -287,9 +290,9 @@ export default function NavBar() {
                        <button
                     onClick={() => navigate("/login")}
                     type="button"
-                    className="flex-shrink-0 rounded-full bg-orange p-1 text-white hover:text-yellow focus:outline-none focus:ring-amber focus:ring-white focus:ring-offset-amber focus:ring-offset-amber"
+                    className="flex-shrink-0 w-20 rounded-full bg-orange p-1.5 text-white hover:text-yellow focus:outline-none focus:ring-amber focus:ring-white focus:ring-offset-amber focus:ring-offset-amber"
                   >
-                    Login
+                    Login 
                   </button>
                        }
                      
