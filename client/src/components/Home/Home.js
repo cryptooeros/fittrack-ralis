@@ -71,7 +71,7 @@
 // export default Home
 
 
-import React from "react"
+import {React, useContext }  from "react"
 import Hero from "./Hero/Hero"
 import Cards from "./Cards/Cards"
 import Pricing from "./Pricing/Pricing"
@@ -79,6 +79,7 @@ import Testimonials from "./Testimonials/Testimonials"
 import img from "../../images/img7.jpg"
 import NumberCounter from 'number-counter'
 import { motion } from "framer-motion"
+import { AuthContext } from "../../context/AuthContext"
 
 const metrics = [
   { id: 1, stat: 25, emphasis: 'Expert', rest: 'coaches at your service.' },
@@ -88,6 +89,8 @@ const metrics = [
 ]
 
 export default function Example() {
+
+  const { user, loggedIn } = useContext(AuthContext)
 
   return (
     <>
@@ -113,7 +116,14 @@ export default function Example() {
         </div>
       </div>
       <div className="mx-auto max-w-4xl px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-flow-col-dense xl:grid-cols-2 xl:gap-x-8">
-        <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
+        <div className="relative pt-6 pb-64 sm:pt-6 sm:pb-64 xl:col-start-1 xl:pb-24">
+          {/* <h1 className="text-5xl font-bold tracking-tight text-white"> Welcome Back</h1> */}
+          {loggedIn && (
+              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-4xl">
+                Welcome back,{" "}
+                <span className="text-gray">{user.username}:</span>
+              </h1>
+            )}
           <h2 className="text-base font-bold text-gray">TIME TO GET PROFILE FITNESS</h2>
           <p className="mt-3 text-3xl font-bold tracking-tight text-white">
             Shape your ideal body.
