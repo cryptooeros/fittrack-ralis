@@ -25,11 +25,11 @@ function AuthProvider({children}){
           .then(res => res.json())
           .then(data => {
             console.log(data)
-            if (data.errors){
+            if (data.error){
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: data.errors,
+                    text: data.error,
                   })
             }
             else if(data.user.email===formData.email){
