@@ -24,7 +24,7 @@ function AuthProvider({children}){
           })
           .then(res => res.json())
           .then(data => {
-            
+            console.log(data)
             if (data.errors){
                 Swal.fire({
                     icon: 'error',
@@ -32,7 +32,7 @@ function AuthProvider({children}){
                     text: data.errors,
                   })
             }
-            else if(data.user){
+            else if(data.email===formData.email){
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
