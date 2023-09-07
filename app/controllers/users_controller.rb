@@ -15,9 +15,9 @@ class UsersController < ApplicationController
         user = User.find_by(id: session[:user_id] ) 
         if session[:user_id].present?
             @user = User.find(session[:user_id])
-            render json: @user, {loggedin: true}
+            render json: {user: @user, logged_in: true}
         else
-           render json: {loggedin: false}
+           render json: {logged_in: false}
         end      
       end
 
