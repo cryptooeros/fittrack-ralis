@@ -71,7 +71,7 @@ function AuthProvider({children}){
                     title: 'Wrong credentials!',
                     text: data.errors[0],
                   })
-            }else if(data.user){
+            }else if(data.email===formData.email){
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
