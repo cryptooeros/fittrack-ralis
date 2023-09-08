@@ -94,7 +94,7 @@ export default function Example() {
 
   return (
     <>
-    <div className="relative py-10 overflow-hidden bg-gradient-to-b from-green to-yellow scroll-smooth" >
+    <div className="relative pb-20 overflow-hidden bg-gradient-to-b from-green to-yellow scroll-smooth" >
       <div className="absolute bottom-0 h-80 w-full xl:inset-0 xl:h-full">
         <div className="h-full w-full xl:grid xl:grid-cols-2">
           <motion.div 
