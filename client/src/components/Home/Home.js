@@ -80,6 +80,7 @@ import img from "../../images/img7.jpg"
 import NumberCounter from 'number-counter'
 import { motion } from "framer-motion"
 import { AuthContext } from "../../context/AuthContext"
+import tick from "../../images/tick.png"
 
 const metrics = [
   { id: 1, stat: 25, emphasis: 'Expert', rest: 'coaches at your service.' },
@@ -121,7 +122,8 @@ export default function Example() {
           {loggedIn && (
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-4xl">
                 Welcome back,{" "}
-                <span className="text-gray">{user.username}:</span>
+                <span className="text-gray">{user.username}:
+                </span>
               </h1>
             )}
           <h2 className="text-base font-bold text-gray">TIME TO GET PROFILE FITNESS</h2>

@@ -159,6 +159,7 @@ export default function NavBar() {
                     >
                       AboutUs
                     </Link1>
+                    {loggedIn &&
                     <Link
                     smooth
                       to="/dashboard"
@@ -166,6 +167,7 @@ export default function NavBar() {
                     >
                       Dashboard
                     </Link>
+                     }                    
                     <Link1
                       to="home/#cards"
                       // spy={true}
