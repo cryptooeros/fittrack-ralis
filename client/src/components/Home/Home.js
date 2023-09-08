@@ -99,7 +99,7 @@ export default function Example() {
       <div className="absolute bottom-0 h-80 w-full xl:inset-0 xl:h-full">
         <div className="h-full w-full xl:grid xl:grid-cols-2">
           <motion.div 
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1.1 }}
               drag="x"
               dragConstraints={{ left: -100, right: 100 }}
