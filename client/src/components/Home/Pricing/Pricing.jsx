@@ -36,6 +36,7 @@ const pricing = {
         'Free Fitness Merchandises',
         '1-hour, dedicated support response time',
         'Acces to Private Nutritionist',
+        'Custom Macro Tracking',
       ],
       cta: 'Monthly billing',
       mostPopular: false,
