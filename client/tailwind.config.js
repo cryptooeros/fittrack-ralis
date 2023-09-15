@@ -11,6 +11,7 @@ const colors = {
       'gray': '#111827',
       'green':'#22c55e',
       'lime':'#84cc16',
+      'slate':'#94a3b8'
     },
 }
 module.exports = {
