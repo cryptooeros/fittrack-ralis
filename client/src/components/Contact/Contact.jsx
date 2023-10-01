@@ -1,6 +1,5 @@
-import { Fragment, useState } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, EnvelopeIcon, PhoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react'
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import Swal from 'sweetalert2'
 
 
