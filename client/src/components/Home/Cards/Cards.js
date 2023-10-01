@@ -1,4 +1,4 @@
-import { LifebuoyIcon, ScaleIcon, HeartIcon, FireIcon } from '@heroicons/react/24/outline'
+import { ScaleIcon, HeartIcon, FireIcon } from '@heroicons/react/24/outline'
 
 const supportLinks = [
   {
